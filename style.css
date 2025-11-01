@@ -44,3 +44,20 @@ button{padding:8px 12px;border-radius:8px;border:0;background:#ffffff22;color:wh
   .photo img{height:120px}
   .hero-content{padding:6px}
 }
+.tiktok-links {
+  list-style: none;
+  padding-left: 0;
+}
+.tiktok-links li {
+  margin: 8px 0;
+}
+.tiktok-links a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.tiktok-links a:hover {
+  color: #ff4757;
+  text-decoration: underline;
+}
