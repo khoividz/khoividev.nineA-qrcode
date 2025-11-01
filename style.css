@@ -1,0 +1,46 @@
+
+/* style.css - simple modern look */
+:root{
+  --bg:#0f1724;
+  --card:#f8fafc;
+  --accent:#ff6b6b;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial;background:linear-gradient(180deg,#071126, #0f1724);color:#111}
+#hero{position:relative;height:36vh;display:flex;align-items:center;justify-content:center;color:white;overflow:hidden}
+#bg{position:absolute;inset:0;width:100%;height:100%}
+.hero-content{position:relative;text-align:center;z-index:2}
+h1{margin:0;font-size:clamp(20px,3.2vw,36px);letter-spacing:1px}
+.subtitle{opacity:0.9}
+.accent{color:var(--accent);font-weight:700}
+.controls{margin-top:12px}
+button{padding:8px 12px;border-radius:8px;border:0;background:#ffffff22;color:white;backdrop-filter: blur(4px);cursor:pointer;margin:0 6px}
+.container{max-width:980px;margin:-40px auto 60px;padding:20px}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.98),rgba(250,250,255,0.95));border-radius:12px;padding:18px;margin:18px 0;box-shadow:0 6px 18px rgba(2,6,23,0.45)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.photo{overflow:hidden;border-radius:8px;background:#eee;display:flex;flex-direction:column;align-items:center}
+.photo img{width:100%;height:160px;object-fit:cover;display:block;transition:transform .45s}
+.photo img:hover{transform:scale(1.04) rotate(-1deg)}
+.photo figcaption{padding:8px;font-size:13px;color:var(--muted)}
+.formula{background:#0b1220;color:#dff3ff;padding:10px;border-radius:8px;margin-top:8px;font-family:monospace}
+.poem{font-style:italic;color:#333}
+.message-en{font-weight:600;color:#0f1724;margin-top:8px}
+.tiny{font-size:12px;color:var(--muted)}
+.lightbox{position:fixed;inset:0;background:rgba(5,6,8,0.85);display:flex;align-items:center;justify-content:center;z-index:50}
+.lightbox img{max-width:90%;max-height:90%;box-shadow:0 8px 30px rgba(0,0,0,0.6)}
+.hidden{display:none}
+
+/* simple appear animation */
+.appear{opacity:0;transform:translateY(12px);animation:fadeUp .8s ease forwards}
+.appear:nth-of-type(1){animation-delay:0.12s}
+.appear:nth-of-type(2){animation-delay:0.28s}
+.appear:nth-of-type(3){animation-delay:0.44s}
+.appear:nth-of-type(4){animation-delay:0.6s}
+@keyframes fadeUp{to{opacity:1;transform:none}}
+
+/* small responsive */
+@media(max-width:600px){
+  .photo img{height:120px}
+  .hero-content{padding:6px}
+}

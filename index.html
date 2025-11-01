@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>STEM & Lớp 9A - Giới thiệu</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- MathJax for math formulas -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <div id="hero" class="fade-in">
+    <canvas id="bg"></canvas>
+    <div class="hero-content">
+      <h1>STEM Club - Lớp 9A (29 học sinh)</h1>
+      <p class="subtitle">Khám phá - Sáng tạo - Ứng dụng | <span class="accent">Khôi Vĩ</span> &amp; các bạn</p>
+      <div class="controls">
+        <button id="playBtn">▶️ Play Music</button>
+        <button id="stopBtn">⏸ Stop</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <section id="about" class="card appear">
+      <h2>Giới thiệu bản thân: Khôi Vĩ</h2>
+      <p>Em là <strong>Khôi Vĩ</strong>, học sinh lớp 9A - yêu thích STEM, lập trình, và thiết kế. Em thích học cách biến ý tưởng thành sản phẩm thực tế bằng <em>cách học hỏi</em> và thực hành.</p>
+      <ul>
+        <li>Vai trò: đại diện lớp/đội STEM</li>
+        <li>Số học sinh lớp: <strong>29</strong></li>
+      </ul>
+    </section>
+
+    <section id="gallery" class="card appear">
+      <h2>Ảnh kỷ niệm của lớp</h2>
+      <div class="grid">
+        <figure class="photo"><img src="class_photo_1.jpeg" alt="Lớp 9A photo 1"/><figcaption>Photo 1</figcaption></figure>\n        <figure class="photo"><img src="class_photo_2.jpeg" alt="Lớp 9A photo 2"/><figcaption>Photo 2</figcaption></figure>\n        <figure class="photo"><img src="class_photo_3.jpeg" alt="Lớp 9A photo 3"/><figcaption>Photo 3</figcaption></figure>\n        <figure class="photo"><img src="class_photo_4.jpeg" alt="Lớp 9A photo 4"/><figcaption>Photo 4</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="stem" class="card appear">
+      <h2>Vài công thức & ứng dụng STEM</h2>
+      <p>Ví dụ toán - hằng đẳng thức:</p>
+      <div class="formula"> - *Bình phương của một tổng*: \((A + B)^2 = A^2 + 2AB + B^2\)
+- *Bình phương của một hiệu*: \((A - B)^2 = A^2 - 2AB + B^2\)
+- *Hiệu hai bình phương*: \(A^2 - B^2 = (A - B)(A + B)\)
+- *Lập phương của một tổng*: \((A + B)^3 = A^3 + 3A^2B + 3AB^2 + B^3\)
+- *Lập phương của một hiệu*: \((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\)
+- *Tổng hai lập phương*: \(A^3 + B^3 = (A + B)(A^2 - AB + B^2)\)
+- *Hiệu hai lập phương*: \(A^3 - B^3 = (A - B)(A^2 + AB + B^2)\) </div>
+      <p>Ví dụ vật lý - Công thức vận tốc trung bình:</p>
+      <div class="formula">\(v_{tb}=\dfrac{\Delta s}{\Delta t}\)</div>
+    </section>
+
+    <section id="poem" class="card appear">
+      <h2> thông điệp lớp em muốn gửi</h2>
+      <p class="poem">"Học không biết mệt, tay làm miệt mài,<br/>Ý tưởng nhỏ nảy thành dự án to."</p>
+      <p class="message-en">"Together we learn, together we create. STEM builds tomorrow." — <em>9A - Love forever</em></p>
+    </section>
+
+    <section id="contact" class="card appear">
+      <h2>Liên hệ</h2>
+      <p>Nếu các bạn và thầy cô muốn xem project hoặc nhu cầu thì, hãy liên hệ với <strong>em</strong>.</p>
+      <p class="tiny">1 san pham do KhoiVi tao ra</p>
+    </section>
+  </main>
+
+  <!-- Lightbox modal for photos -->
+  <div id="lightbox" class="lightbox hidden" onclick="hideLightbox()">
+    <img id="lightboxImg" src="" alt="photo"/>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
